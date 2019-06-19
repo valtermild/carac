@@ -1704,8 +1704,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: scale(1.05);
       transform: scale(1.05);
       position: absolute;
-      content: "";
-      border: 4px solid #f16821;
+      content: "";      
       left: 20px;
       right: 20px;
       top: 20px;
