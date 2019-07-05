@@ -1825,6 +1825,12 @@ h1, h2, h3, h4, h5,
     z-index: 2;
     line-height: 1.2; }
     @media (max-width: 991.98px) {
+      .float{        
+        width:60px;
+        height:60px;
+        bottom:20px;
+        right:20px;        
+      }
       .product-item-2 .product-title-wrap h2 {
         font-size: 2rem; } }
     .product-item-2 .product-title-wrap h2 a {
