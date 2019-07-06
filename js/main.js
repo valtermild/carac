@@ -247,5 +247,20 @@ jQuery(document).ready(function($) {
 
   };
   siteScroll();
-
+  var magnificPopup = $.magnificPopup.instance;
+  $('#price-section').magnificPopup({
+	delegate: 'a', // child items selector, by clicking on it popup will open
+	type: 'inline',
+	callbacks: {
+	beforeOpen: function() {
+		let cena = magnificPopup.st.el.data( "price" );
+		let kol = magnificPopup.st.el.data( "items" );
+		$('#cena').text(cena);
+		$('#kol').text(kol);		
+	  }	
+	}
+	// other options
+  });
+  
 });
+

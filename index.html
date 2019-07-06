@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fa/all.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -98,7 +99,7 @@
 
   
      
-    <div class="site-blocks-cover overlay" style="background-image: url(images/carac2.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/carac2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
@@ -110,7 +111,7 @@
                 <p class="mb-5 lead">Лучшее решение для отдыха и сна в автомобильных путешествиях. Японский дизайн</p>
                 <div>
                   <a href="#products-section" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block smoothscroll">подробнее</a>
-                  <a href="#contact-section" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block smoothscroll">заказать</a>
+                  <a href="#price-section" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block smoothscroll">заказать</a>
                 </div>
               </div>
             </div>
@@ -485,7 +486,7 @@
                   <p class="mb-4 text-primary">Выгода: 701.00 руб.</p>
                 </div>
                 <div>                  
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">заказать</a>
+                  <a href="#zakaz" class="btn btn-black btn-outline-black ml-1 rounded-0" data-price="2199" data-items="1">заказать</a>
                 </div>
               </div>
             </div>
@@ -504,7 +505,7 @@
                   <p class="mb-4 text-primary">Выгода: 1 801.00 руб.</p>
                 </div>
                 <div>                  
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">заказать</a>
+                  <a href="#zakaz" class="btn btn-black btn-outline-black ml-1 rounded-0" data-price="3999" data-items="2">заказать</a>
                 </div>
               </div>
             </div>
@@ -523,7 +524,7 @@
                   <p class="mb-4 text-primary">Выгода: 4 101.00 руб.</p>
                 </div>
                 <div>                  
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">заказать</a>
+                  <a href="#zakaz" class="btn btn-black btn-outline-black ml-1 rounded-0" data-price="7499" data-items="4">заказать</a>
                 </div>
               </div>
             </div>
@@ -884,6 +885,44 @@
         </div>
         
       </div>
+
+      
+            <form action="#" class="p-5 col-md-5 mx-auto bg-white mfp-hide" id="zakaz">
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">Имя</label>
+                  <input type="text" id="fname" class="form-control rounded-0">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Фамилия</label>
+                  <input type="text" id="lname" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="tel">Телефон</label> 
+                  <input type="tel" id="tel" class="form-control rounded-0" required>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control rounded-0">
+                </div>
+              </div>
+              <p class="mb-2 text-black">Стоимость: <span class="text-primary" id="cena"></span> руб.</p>
+              <p class="mb-2 text-black">Количество: <span id="kol"></span> шт.</p>
+              <div class="row form-group text-center">
+                <div class="col-md-12">
+                  <input type="submit" value="Отправить" class="btn btn-black rounded-0 py-3 px-4">
+                </div>
+              </div>      
+            </form>
+          
     </div>
 
   
@@ -919,7 +958,7 @@
             <a href="#"><img src="images/2.jpg" alt="Image" class="img-fluid mb-3"></a>
             <h4 class="h5">Цвет: черный</h4>
             <strong class="text-black mb-3 d-inline-block"></strong>
-            <p><a href="#contact-section" class="btn btn-black rounded-0 smoothscroll">Заказать</a></p>
+            <p><a href="#price-section" class="btn btn-black rounded-0 smoothscroll">Заказать</a></p>
           </div>
         </div>
         <div class="row pt-5 mt-2 text-center">
@@ -933,10 +972,14 @@
           
         </div>
       </div>
+
+      
+
     </footer>
     <a href="https://api.whatsapp.com/send?phone=79147032114" class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
+      <i class="fab fa-whatsapp my-float"></i>
       </a>
+      
   </div> <!-- .site-wrap -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -952,6 +995,7 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
 
   
   <script src="js/main.js"></script>
